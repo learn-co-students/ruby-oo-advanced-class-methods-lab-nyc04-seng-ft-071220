@@ -55,6 +55,8 @@ class Song
       # binding.pry
     end
 
+
+    #it's there a better way to do this one, more concise?
     def self.create_from_filename(filename)
       song = self.create
       song.artist_name = filename.split(/[-.]/)[0].strip
